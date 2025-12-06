@@ -85,6 +85,34 @@
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
         }
 
+        #hearAgainBtn {
+            margin-top: 40px;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s ease;
+            animation: fadeInUp 1s ease-out 0.6s backwards;
+            letter-spacing: 1px;
+        }
+
+        #hearAgainBtn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(102, 126, 234, 0.6);
+            background: linear-gradient(135deg, #764ba2, #667eea);
+        }
+
+        #hearAgainBtn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+        }
+
         @media (max-width: 768px) {
             #text {
                 font-size: 1.2rem;
@@ -94,6 +122,12 @@
             #result {
                 font-size: 2.5rem;
                 padding: 15px;
+            }
+
+            #hearAgainBtn {
+                font-size: 1rem;
+                padding: 12px 30px;
+                margin-top: 30px;
             }
         }
 
@@ -109,6 +143,12 @@
                 padding: 12px;
                 letter-spacing: 1px;
             }
+
+            #hearAgainBtn {
+                font-size: 0.9rem;
+                padding: 10px 25px;
+                margin-top: 25px;
+            }
         }
 
         @media (min-width: 1200px) {
@@ -120,6 +160,12 @@
             #result {
                 font-size: 4.5rem;
             }
+
+            #hearAgainBtn {
+                font-size: 1.3rem;
+                padding: 18px 50px;
+                margin-top: 50px;
+            }
         }
     </style>
 </head>
@@ -127,6 +173,7 @@
 <body>
     <p id="text">Welcome to the Future</p>
     <h1 id="result">Your Result Here</h1>
+    <button id="hearAgainBtn">Hear Again</button>
     <script src="app.js"></script>
 </body>
 
